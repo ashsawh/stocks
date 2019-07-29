@@ -1,0 +1,4 @@
+general:
+  app_name: YCharts
+  environment: qa
+  log_path: /var/logs/app.log

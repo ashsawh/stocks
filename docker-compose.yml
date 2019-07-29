@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  server:
+    container_name: y_recon
+    restart: always
+    build:
+      context: clusters/server/
+    volumes:
+      - ./clusters/server:/var/app/backend
+      - ./clusters/server/logs:/var/logs
+    ports:
+      - 5000:5000
