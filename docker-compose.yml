@@ -11,3 +11,8 @@ services:
       - ./clusters/server/logs:/var/logs
     ports:
       - 5000:5000
+  sonar:
+    container_name: y_qube
+    image: sonarqube
+    ports:
+      - 9035:9000
