@@ -1,4 +1,4 @@
-# YCharts Recon exercise
+# Stock exercise
 
 ## Description
 
@@ -12,7 +12,7 @@ done by recon.py and the bulk of the logic contained in the src director, in par
 2. Understanding of unit testing and coverage
 3. Extensibility of reconciliation
 4. Easy setup 
-5. Code quality check
+5. Code quality check 
 
 ## Instructions
    
