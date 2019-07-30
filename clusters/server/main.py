@@ -20,4 +20,15 @@ if __name__ == '__main__':
 
     # compare the two days
     r = Recon()
-    print("recon.out\r\n", "--------\r\n", r.compare(D0, D1))
+    s = r.compare(D0, D1)
+
+    print("recon.in\r\n--------\r\nD0-POS\r\nAAPL 100\r\nGOOG 200\r\nSP500 175.75\r\nCash 10000\r\n")
+    print("D1-TRN\r\nAAPL SELL 100 30000\r\nGOOG BUY 10 10000   \r\nCASH DEPOSIT 0 1000"
+                        "\r\nCASH FEE 0 50\r\nGOOG DIVIDEND 0 50\r\nTD BUY 100 10000\r\n")
+
+    print("D1-POS\r\nGOOG 220\r\nSP500 175.75\r\nCash 20000\r\nMSFT 10\r\n")
+
+    print("recon.out\r\n--------")
+
+    for symbol, amount in s.items():
+        print(symbol, " ", amount)
